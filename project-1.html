@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatsup-ui</title>
+    
+    <style>
+        .sk{
+            border: 2px solid  #128c7e;
+            width: 393px;
+            height: 85px;
+            margin-left: 550px;
+            margin-top: 50px;
+           background-color: #128c7e;
+   
+        }
+        .dp{
+            border: 2px solid ghostwhite;
+            width: 40px;
+            height: 40px;
+            margin-left: 30px;
+            border-radius: 30px;
+            margin-top:25px ;
+            display: flex;
+            background-image: url("./butterfly.jpg");
+            background-size: cover;
+
+        }
+         .arrow{
+           margin-top: -47px;
+           margin-left: 0px;
+           font-size: smaller;
+
+        }
+         .name{
+            color:black;
+            margin-top:-48px ;
+            margin-left: 80px;   
+        }
+        .online{
+            color: black;
+            margin-top: -11px;
+            margin-left: 81px;
+            font-size: 14px;
+        }
+        .video{
+            margin-top: -49px;
+            margin-left: 280px; 
+        } 
+        .phone{
+            margin-top: -43px;
+            margin-left: 323px;
+        }
+        .more{
+           margin-top: -38px;
+           margin-left: 360px; 
+        }
+          .battery{
+            margin-top: -76px;
+            margin-left: 364px;
+            color: ghostwhite;
+        } 
+          .signal{
+            margin-top:-39px ;
+            margin-left: 347px; 
+              
+        } 
+           .naach{
+            border: 4px solid black;
+            width: 70px;
+            height: 9px;
+            border-radius: 10px;
+            margin-top: -33px;
+            margin-left: 159px;
+            background-color: black; 
+        }
+        .screen{
+            border: 10px solid black;
+            width: 393px;
+            height: 639px;
+            margin-top: -46px;
+            margin-left: -9px;
+            border-radius: 20px;
+            
+        }
+
+        .time{
+            font-size: x-small;
+            margin-top: -658px;
+            margin-left: 245px;
+        }
+        .text{
+            border: 2px solid black;
+            width:350px ;
+            height:30px ;
+            margin-top: 586px;
+            border-radius: 15px;
+            position: sticky;
+            
+            
+        }
+        .mic{
+            margin-left:355px ;
+            margin-top: -54px;
+        }
+        .moji{
+            margin-top: -48px;
+            margin-left: 5px;
+
+        }
+        .cemara{
+            margin-top: -44px;
+            margin-left: 310px;
+        }
+        .rupee{
+            margin-top: -45px;
+            margin-left: 270px;
+        }
+        .attach{
+            margin-top: -43px;
+            margin-left: 234px;
+        }
+        .display{
+            border: 2px solid black;
+            width: 393px;
+            height: 550px;
+            margin-top: 0px ;
+            margin-left: 550px ;
+            border-radius: 0px;
+            overflow: scroll;
+            background-image: url(./whats-ui1.jpg);
+            background-size: cover;
+        }
+    
+              ::-webkit-scrollbar{
+                width: 0px;
+              }
+        
+        .date1{
+            position: sticky;
+            top: 4px;
+        }
+        .date2{
+            position: sticky;
+            top: 4px;
+        }
+        .date3{
+            position:sticky;
+            t0p:4px;
+        }
+        .frnd{
+            border: 2px solid #ffffff;
+            width: fit-content;
+            border-radius: 15px;
+            font-size: small;
+            padding-top:5px;
+            padding-bottom:5px ;
+            padding-left:5px;
+            padding-right:5px ;
+            background-color: #ffffff;
+        }
+         
+        .me{
+            border: 2px solid  #dcf8c6 ;
+            width: fit-content;
+            margin-left:324px ; 
+            padding-left: 15px;
+            top: 5px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small;
+            background-color: #dcf8c6;
+        }
+        .me1{
+            border: 2px solid  #dcf8c6;
+            margin-left:150px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small;
+            background-color: #dcf8c6;
+
+        }
+        .me2{
+            border: 2px solid  #dcf8c6;
+            width: fit-content;
+            margin-left:314px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small;
+            background-color: #dcf8c6;
+  
+        }
+        .me3{
+            border: 2px solid  #dcf8c6;
+            width: fit-content;
+            margin-left:185px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small; 
+            background-color: #dcf8c6;
+ 
+        }
+        .me4{
+            border: 2px solid  #dcf8c6;
+            width: fit-content;
+            margin-left:185px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small;
+            background-color: #dcf8c6;
+    
+        }
+        .me5{
+            border: 2px solid  #dcf8c6;
+            width: fit-content;
+            margin-left:205px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small; 
+            background-color: #dcf8c6;
+  
+        }
+        .me6{
+            border: 2px solid  #dcf8c6;
+            width: fit-content;
+            margin-left:314px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small; 
+            background-color: #dcf8c6;
+  
+
+        }
+        .me7{
+            border: 2px solid  #dcf8c6;
+            width: fit-content;
+            margin-left:280px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small;
+            background-color: #dcf8c6;
+     
+        }
+       .me8{
+          border: 2px solid  #dcf8c6;
+            width: fit-content;
+            margin-left:295px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small; 
+            background-color: #dcf8c6;
+  
+    }
+    .me9{
+        border: 2px solid  #dcf8c6;
+            width: fit-content;
+            margin-left:308px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small;
+            background-color: #dcf8c6;
+   
+
+    }
+    .me11{
+        border: 2px solid  #dcf8c6; 
+        width: fit-content;
+            margin-left:230px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small;
+            background-color: #dcf8c6;
+   
+ 
+    }
+    .me12{
+        border: 2px solid  #dcf8c6; 
+        width: fit-content;
+            margin-left:200px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small;
+            background-color: #dcf8c6;
+   
+    }
+    .me13{
+        border: 2px solid  #dcf8c6; 
+        width: fit-content;
+            margin-left:180px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small;
+            background-color: #dcf8c6;
+   
+    }
+    .me14{
+        border: 2px solid  #dcf8c6; 
+        width: fit-content;
+            margin-left:180px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small;
+            background-color: #dcf8c6;
+   
+    }
+    .me15{
+        border: 2px solid  #dcf8c6; 
+        width: fit-content;
+            margin-left:180px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small; 
+            background-color: #dcf8c6;
+  
+    }
+    .me16{
+        border: 2px solid  #dcf8c6; 
+        width: fit-content;
+            margin-left:180px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small; 
+            background-color: #dcf8c6;
+  
+    }
+    .me17{
+        border: 2px solid  #dcf8c6; 
+        width: fit-content;
+            margin-left:180px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small; 
+            background-color: #dcf8c6;
+  
+    }
+    .me18{
+        border: 2px solid  #dcf8c6; 
+        width: fit-content;
+            margin-left:180px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small;
+            background-color: #dcf8c6;
+  
+    }
+    .me19{
+        border: 2px solid  #dcf8c6; 
+        width: fit-content;
+            margin-left:260px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small; 
+            background-color: #dcf8c6;
+
+    }
+    .me20{
+        border: 2px solid  #dcf8c6;
+            width: fit-content;
+            margin-left:324px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small;
+            background-color: #dcf8c6;
+  
+    }
+    .me21{
+        border: 2px solid  #dcf8c6;
+            width: fit-content;
+            margin-left:325px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small; 
+            background-color: #dcf8c6;
+
+    }
+    .me22{
+        border: 2px solid  #dcf8c6;
+            width: fit-content;
+            margin-left:200px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small; 
+            background-color: #dcf8c6;
+
+    }
+    .me23{
+        border: 2px solid  #dcf8c6; 
+        width: fit-content;
+            margin-left:300px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small; 
+            background-color: #dcf8c6;
+
+    }
+    .me24{
+        border: 2px solid  #dcf8c6; 
+        width: fit-content;
+            margin-left:230px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small; 
+            background-color: #dcf8c6;
+
+    }
+    .me25{
+        border: 2px solid  #dcf8c6; 
+        width: fit-content;
+            margin-left:255px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px;
+            font-size: small; 
+            background-color: #dcf8c6;
+  
+    }
+    .me26{
+        border: 2px solid  #dcf8c6; 
+        width: fit-content;
+            margin-left:320px ; 
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 15px; 
+            font-size: small;
+            background-color: #dcf8c6;
+               
+    }
+    .date1{
+        border: 2px solid  #ffffff;
+        width: fit-content;
+        height: fit-content;
+        margin-left: 163px;
+        padding-top: 5px; 
+        padding-bottom: 5px;
+        padding-right: 5px;
+        padding-left: 5px;
+        border-radius: 20px;
+        position: sticky;
+        top: 4px;
+        background-color:  #ffffff;
+
+    }
+    .date2{
+        border: 2px solid  #ffffff;
+        width: fit-content;
+        height: fit-content;
+        margin-left: 163px;
+        padding-top: 5px; 
+        padding-bottom: 5px;
+        padding-right: 5px;
+        padding-left: 5px;
+        border-radius: 20px;
+        position: sticky;
+        top: 4px;
+        background-color: #ffffff;
+    }
+    .date3{
+        border: 2px solid  #ffffff;
+        width: fit-content;
+        height: fit-content;
+        margin-left: 163px;
+        padding-top: 5px; 
+        padding-bottom: 5px;
+        padding-right: 5px;
+        padding-left: 5px;
+        border-radius: 20px;
+        position: sticky;
+        top: 4px; 
+        background-color: #ffffff; 
+    }
+
+
+
+
+        
+        .note{
+            border: 2px solid  #ece5dd;
+            width: 280px;
+            height: 40px;
+            margin-left: 60px ;
+            padding-top: 7px;
+            border-radius: 17px; 
+            padding-top: 5px;
+            padding-bottom: 5px; 
+            padding-right: 10px;
+            padding-left: 10px;
+            background-color: #ece5dd;
+
+        }
+
+           
+       
+       
+        
+          
+    </style>
+</head>
+<body style="background-image: url(./black1.jpg); background-size: cover;">
+    <div class="sk">
+        <p class="dp"></p>
+        <p class="arrow"><img src="./arrow.png"  height="25px" width="25px"></p> 
+        <p class="name">Ganesh</p>
+        <p class="online">online</p>
+        <p class="video"><img src="./video.png" height="21px" width="16px" /></p>
+        <p class="phone"><img src="./phone.png" height="20px" width="18px"/></p>
+        <p class="more"><img src="./more.png" height="21px" width="20px"/></p>
+        <p class="battery"><img src="./full-battery.png" height="20px" width="20px" style="color: ghostwhite;" /></p>
+        <p class="signal"><img src="./signal.png"  height="12px" width="12px"/></p>
+        <p class="naach"></p>
+        <p class="screen"></p>
+        <p class="time">3:00</p>  
+        <p class="text" placeholder="message"> </p>
+        <p class="mic"><img src="./mic.png" height="37px" width="37px"/></p>
+        <p class="moji"><img src="./emo.png" height="25px" width="25px" /></p>
+        <p class="cemara"><img src="./camera.png" height="23px" width="21px"/></p>
+        <p class="rupee"><img src="./rupee.png" height="25px" width="23px"/></p>
+        <p class="attach"><img src="./attach file .png" height="23px" width="23px"/></p>
+  
+      </div>
+
+      <div class="display">
+        <h1 class="date1" style="text-align: center; font-size:small ;">1mar2024</h1>
+        <p class="note" style="text-align: center; font-size:x-small;">Messages to yourself are end-to-end encrypted. No one outside of the this chat not even whatsapp, can read or listen to them.tap to learn more.</p>
+
+            <p class="frnd">hi jani </p>
+            <p class="me">hi,man</p>
+            <p class="frnd">how are you ra</p>
+            <p class="me1"> i am very good  and  how are you men</p>
+            <p class="frnd"> i am pretty well</p>
+            <p class="me2">ooh ok..</p>
+            <p class="frnd">what are you doing</p>
+            <p class="me3"> nothig man , what about you men</p>
+            <p class="frnd"> i am daily watching the movies,series</p>
+            <p class="me4"> are u completed your tasks haa...</p>
+            <p class="frnd">noo.. man </p>
+            <p class="me5">why bro.. what happen man?</p>
+            <p class="frnd">i didn't understand the conpect</p>
+            <p class="me6">ohh..okk</p>
+            <p class="frnd">can u explain me </p>
+            <p class="me7 ">haa.. definately</p>
+            <p class="frnd">tq.. brother</p>
+            <p class="me8">welcome☺</p>
+            <p class="frnd">okk..bye</p>
+            <p class="me9">okk bye..</p>
+            
+            
+           
+            <h1 class="date2" style="text-align: center; font-size:small ;">2mar2024</h1>
+            <p class="me11">Hey Ganesh, what’s up</p>
+            <p class="frnd">Not much, Jani! Just chilling. How about you</p>
+            <p class="me12">Same here, Ganesh. Work’s been keeping me busy.</p>
+            <p class="frnd">Oh, I feel you. The daily grind, right?</p>
+            <p class="me13">Absolutely. But hey, weekends are around the corner!
+            </p>
+            <p class="frnd">True! Any exciting plans?</p>
+            <p class="me14">Thinking of catching up on some movies. You?</p>
+            <p class="frnd">Nice! I might try that new restaurant in town.</p>
+            <p class="me15">Oh, the one with the amazing biryani?</p>
+            <p class="frnd">Yep, that’s the one! Heard it’s fantastic.</p>
+            <p class="me16">Awesome! Let’s make it a plan then.</p>
+            <p class="frnd"> Deal! And hey, don’t forget to wish everyone a Happy Ganesh Chaturthi!</p>
+            <p class="me17">Of course! May Lord Ganesha bless us all.
+            </p>
+            <p class="frnd">🙏 Absolutely. Have a great day, Jani!</p>
+            <p class="me18">You too, Ganesh! Catch you later! 😊</p>
+
+            <h1 class="date2" style="text-align: center; font-size:small ;">3mar2024</h1>
+            <p class="frnd">hi ra</p>
+            <p class=" me19"> hi ra whatsup man </p>
+            <p class="frnd">are u going today institute</p>
+            <p class="me20">haa.. u</p>
+            <p class="frnd"> i have some work and i am going village </p>
+            <p class="me21">hoo..</p>
+            <p class="frnd">after complete the class . can u send me class record</p>
+            <p class="me22">ok.. don't worry bro i can send u</p>
+            <p class="frnd">tq so much bro </p>
+            <p class="me23">w r u going</p>
+            <p class="frnd">my grandmother village</p> 
+            <p class="me24">can  u send your location</p>
+            <p class="frnd"><img src="./post2 .jpg" height="200px" width="200px"/></p>
+            <p class="me25">hoo..go careful man</p>
+            <p class="frnd">hmmm..ok </p>
+            <p class="me26">byee ra</p>
+            <p class="frnd">byeee</p>
+        </div>
+      
+
+
+</body>
+</html>
